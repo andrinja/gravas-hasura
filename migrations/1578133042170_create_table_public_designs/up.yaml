@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "public"."designs"("id" serial NOT NULL, "name" text NOT NULL,
+      "is_active" boolean NOT NULL DEFAULT true, PRIMARY KEY ("id") );
+  type: run_sql
+- args:
+    name: designs
+    schema: public
+  type: add_existing_table_or_view

@@ -1,0 +1,6 @@
+- args:
+    relationship: items
+    table:
+      name: gift_cards
+      schema: public
+  type: drop_relationship

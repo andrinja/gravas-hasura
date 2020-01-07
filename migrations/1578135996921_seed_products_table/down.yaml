@@ -1,0 +1,5 @@
+- args:
+    cascade: true
+    sql: |-
+      TRUNCATE TABLE products;
+  type: run_sql

@@ -1,0 +1,9 @@
+- args:
+    cascade: true
+    sql: |-
+      INSERT INTO prices(product_id, persons, amount)
+      VALUES
+      (1, 1, 40),
+      (1, 2, 65),
+      (2, 1, 5);
+  type: run_sql

@@ -1,0 +1,11 @@
+- args:
+    sql: CREATE TABLE "public"."products"("id" serial NOT NULL, "name" text NOT NULL,
+      "type_id" integer NOT NULL, "price_type_id" integer NOT NULL, PRIMARY KEY ("id")
+      , FOREIGN KEY ("type_id") REFERENCES "public"."types"("id") ON UPDATE cascade
+      ON DELETE cascade, FOREIGN KEY ("price_type_id") REFERENCES "public"."price_types"("id")
+      ON UPDATE cascade ON DELETE cascade);
+  type: run_sql
+- args:
+    name: products
+    schema: public
+  type: add_existing_table_or_view

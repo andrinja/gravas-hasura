@@ -1,0 +1,8 @@
+- args:
+    name: price_type
+    table:
+      name: products
+      schema: public
+    using:
+      foreign_key_constraint_on: price_type_id
+  type: create_object_relationship

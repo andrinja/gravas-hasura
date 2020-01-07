@@ -1,0 +1,11 @@
+- args:
+    sql: CREATE TABLE "public"."gift_card_items"("id" serial NOT NULL, "name" text
+      NOT NULL, "price_type" text NOT NULL, "type" text NOT NULL, "price" integer
+      NOT NULL, "data" integer, "gift_card_id" integer NOT NULL, PRIMARY KEY ("id")
+      , FOREIGN KEY ("gift_card_id") REFERENCES "public"."gift_cards"("id") ON UPDATE
+      cascade ON DELETE cascade);
+  type: run_sql
+- args:
+    name: gift_card_items
+    schema: public
+  type: add_existing_table_or_view

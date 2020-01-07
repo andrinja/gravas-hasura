@@ -1,0 +1,10 @@
+- args:
+    cascade: true
+    sql: |-
+      INSERT INTO designs(name, is_active)
+      VALUES
+      ('summer', true),
+      ('autumn', true),
+      ('winter', true),
+      ('spring', true);
+  type: run_sql

@@ -1,0 +1,12 @@
+- args:
+    name: items
+    table:
+      name: gift_cards
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: gift_card_id
+        table:
+          name: gift_card_items
+          schema: public
+  type: create_array_relationship

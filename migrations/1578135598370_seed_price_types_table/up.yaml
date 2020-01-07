@@ -1,0 +1,9 @@
+- args:
+    cascade: true
+    sql: |-
+      INSERT INTO price_types(name)
+      VALUES
+      ('per_person'),
+      ('absolute'),
+      ('value');
+  type: run_sql

@@ -1,0 +1,9 @@
+- args:
+    cascade: true
+    sql: |-
+      INSERT INTO products(name, type_id, price_type_id)
+      VALUES
+      ('herbal_sauna_ritual', 1, 2),
+      ('paintball', 3, 1),
+      ('value', 4, 3);
+  type: run_sql

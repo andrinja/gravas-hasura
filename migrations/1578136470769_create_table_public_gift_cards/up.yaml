@@ -1,0 +1,11 @@
+- args:
+    sql:
+      CREATE TABLE "public"."gift_cards"("id" serial NOT NULL,"reference" uuid NOT NULL DEFAULT gen_random_uuid(), "note" text, "phone" text, "name" text, "created_at" timestamptz NOT
+      NULL DEFAULT now(), "stripe_ref" text, "valid_until" timestamptz, "design" text
+      NOT NULL, "email" text NOT NULL, "used" boolean NOT NULL DEFAULT false, PRIMARY
+      KEY ("id") );
+  type: run_sql
+- args:
+    name: gift_cards
+    schema: public
+  type: add_existing_table_or_view

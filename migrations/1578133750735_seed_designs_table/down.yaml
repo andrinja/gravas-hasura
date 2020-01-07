@@ -1,0 +1,5 @@
+- args:
+    cascade: true
+    sql: |-
+      TRUNCATE TABLE designs;
+  type: run_sql

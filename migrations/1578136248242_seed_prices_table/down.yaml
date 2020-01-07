@@ -1,0 +1,5 @@
+- args:
+    cascade: true
+    sql: |-
+      TRUNCATE TABLE prices;
+  type: run_sql

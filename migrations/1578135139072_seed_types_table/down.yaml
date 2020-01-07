@@ -1,0 +1,5 @@
+- args:
+    cascade: true
+    sql: |-
+      TRUNCATE TABLE types;
+  type: run_sql

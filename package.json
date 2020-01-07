@@ -1,0 +1,14 @@
+{
+  "name": "gravas-hasura",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/andrinja/gravas-hasura.git",
+  "author": "jedondfds <jekabs.donis@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "hasura": "docker-compose up",
+    "hasura:down": "docker-compose down",
+    "migrate": "hasura migrate apply",
+    "migrate:down": "hasura migrate apply --down all"
+  }
+}

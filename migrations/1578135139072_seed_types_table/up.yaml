@@ -1,0 +1,11 @@
+- args:
+    cascade: true
+    sql: |-
+      INSERT INTO types(name)
+      VALUES
+      ('rituals'),
+      ('accommodation'),
+      ('recreational'),
+      ('value'),
+      ('treatment')
+  type: run_sql
